@@ -1,6 +1,6 @@
-#Database Localization Project
+Database Localization Project
 
-##Introduction:
+Introduction:
 Database localization involves storing data in a database in a language-specific manner to cater to users from different linguistic backgrounds.
 This readme.md provides an overview of the database localization approach implemented in the "Add Employee" feature of the application.
 
@@ -36,20 +36,31 @@ Java Application to Add Records to the Employees Table: The Java application Add
 Here's a brief overview of the application:
 
 1.It establishes a connection to the MySQL database using JDBC.
+
 2.It prepares an SQL INSERT statement to add a new employee record to the employee's table.
+
 3.It prompts the user to enter the employee details such as name, age, and salary.
+
 4.It executes the INSERT statement with the provided employee details.
+
 5.If successful, it displays a message confirming the insertion of the employee record.
+
 6.If an error occurs during the insertion process, it catches the exception and prints the error message.
 
 ##To run the application:
 
 1.Open the project in your preferred Java IDE (e.g., IntelliJ IDEA).
+
 2.Ensure that the MySQL Connector/J library is included in your project's dependencies.
-3.Run the AddEmployees.java file.
+
+3.Run the AddEmployeesData.java file.
+
 4.Follow the prompts to enter the employee details (first_name, last_name, email).
+
 5.The application will attempt to add the employee record to the database.
+
 6.If successful, a message confirming the insertion will be displayed. If an error occurs, an error message will be shown.
+
 7.Ensure that your MySQL database is running and accessible, and that the table structure matches the employees table described above.
 
 
