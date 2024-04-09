@@ -11,16 +11,21 @@ is saved in the appropriate language-specific tables.
 ##Implement overview:
 Locale Selection: In your JavaFX application, users can select their preferred language from a dropdown menu. 
 The available options are English, Nepali, and Japanese.
+
 ResourceBundle: You use ResourceBundle to manage localized resources, such as labels and button text, for different languages.
 Each language has its own properties file (messages_en_UK.properties, messages_fa_IR.properties, messages_ja_JP.properties) 
 containing localized strings.
+
 UI Update: When the user selects a language from the dropdown menu, the UI elements such as labels, text fields, and
 buttons are updated with text retrieved from the corresponding ResourceBundle.
+
 Data Localization: When the user enters employee data and clicks the "Save" button, the entered data is saved into the database. 
 However, instead of saving all data into a single table, you have separate tables for each language (employee_en, employee_ne, employee_ja). 
 The table used depends on the selected language.
+
 Table Selection:Based on the selected language, a corresponding table name (employee_en, employee_ne, employee_ja) is determined.
 For example, if the user selects Nepali, data will be saved into the employee_ne table.
+
 Insertion into Database:The e data (first name, last name, email) is inserted into the determined table using an SQL INSERT statement.
 Error Handling: If an error occurs during the database operation (e.g., connection failure, data truncation), an error message is displayed
 to the user using an alert dialog.
